@@ -1,0 +1,13 @@
+"Energy Import - Off Peak"$"30000000"$"35000000"$"50000000"$"10"|
+"Energy Export - Off Peak"$"750"$"1000"$"1"$"250"$""|
+"Net Energy Off Peak"$"250"$""$""$""
+Energy Import - Peak 1000 1500 500 10
+
+
+
+
+
+Previous Balance$84,220|Security Deposit$-|Reconnection Charges$-|Meter Charges$-|Irregular Bill$-|Others$(35,000)|Payments / Adjustment$(24,000|)Current Balance$25,000|Amount Due$(35,000)|Current Bill$3,300|Current Instalment Amount$20,000|Amount Payable within Due Date$23,300|Late Payment Surcharge$330|Amount Payable after Due Date$23,630|Suspended Arrears Balance Instalment Amount$5,000|As of Arrears$28,300|No. of Balance Instalment 10$-|
+
+
+
