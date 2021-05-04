@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DCF8863-ECFC-49C3-9564-9EAF1C66D321}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsumerPortalNetService</RootNamespace>
+    <AssemblyName>ConsumerPortalNetService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dupbill, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\dupbill.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\LICENSE.txt" />
+    <Content Include="images\bgline.png" />
+    <Content Include="images\Blank-back.jpg" />
+    <Content Include="images\Blank-back[old].jpg" />
+    <Content Include="images\Blank-front.jpg" />
+    <Content Include="images\Blank-front[old].jpg" />
+    <Content Include="images\calculate-total.jpg" />
+    <Content Include="images\CallMeBtn.jpg" />
+    <Content Include="images\chart.jpeg" />
+    <Content Include="images\chart2.jpeg" />
+    <Content Include="images\disconnection-logo.jpg" />
+    <Content Include="images\down-arrow.png" />
+    <Content Include="images\errorLogbtn.jpg" />
+    <Content Include="images\Final Bill-02.jpg" />
+    <Content Include="images\foot.jpg" />
+    <Content Include="images\Know Your Bill.jpeg" />
+    <Content Include="images\logbtn.jpg" />
+    <Content Include="images\refresh.jpg" />
+    <Content Include="images\regbtn.jpg" />
+    <Content Include="images\save.jpg" />
+    <Content Include="images\sbtn.jpg" />
+    <Content Include="images\smsMeBtn.jpg" />
+    <Content Include="images\star-logo.jpg" />
+    <Content Include="images\star-logo.png" />
+    <Content Include="images\star-logo[old].png" />
+    <Content Include="images\Test page 1.jpg" />
+    <Content Include="images\Test page 2.jpg" />
+    <Content Include="images\up-arrow.png" />
+    <Content Include="images\viewbillbtn.jpg" />
+    <Content Include="PC.svc" />
+    <Content Include="PDF Utils\sampledata.txt" />
+    <Content Include="Service1.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IPC.cs" />
+    <Compile Include="Models\BillDataModel.cs" />
+    <Compile Include="Models\FeederDataModel.cs" />
+    <Compile Include="Models\RequestStatus.cs" />
+    <Compile Include="PC.svc.cs">
+      <DependentUpon>PC.svc</DependentUpon>
+    </Compile>
+    <Compile Include="PDF Utils\Class1.cs" />
+    <Compile Include="PDF Utils\CommonFunction.cs" />
+    <Compile Include="PDF Utils\DBContext.cs" />
+    <Compile Include="PDF Utils\Encrypt.cs" />
+    <Compile Include="PDF Utils\GeneratePDF.cs" />
+    <Compile Include="PDF Utils\Parser.cs" />
+    <Compile Include="PDF Utils\PDFViewModel.cs" />
+    <Compile Include="PDF Utils\UsageModel.cs" />
+    <Compile Include="Service1.svc.cs">
+      <DependentUpon>Service1.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IService1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\Helvetica-Condensed 2.otf" />
+    <Content Include="fonts\Helvetica-Condensed-Bold.otf" />
+    <Content Include="fonts\Helvetica-Condensed.otf" />
+    <Content Include="fonts\HelveticaCdBd.ttf" />
+    <Content Include="fonts\HelveticaMedCd.ttf" />
+    <Content Include="fonts\Roboto-Bold.ttf" />
+    <Content Include="fonts\RobotoMono-Bold.ttf" />
+    <Content Include="fonts\RobotoMono-BoldItalic.ttf" />
+    <Content Include="fonts\RobotoMono-Italic.ttf" />
+    <Content Include="fonts\RobotoMono-Light.ttf" />
+    <Content Include="fonts\RobotoMono-LightItalic.ttf" />
+    <Content Include="fonts\RobotoMono-Medium.ttf" />
+    <Content Include="fonts\RobotoMono-MediumItalic.ttf" />
+    <Content Include="fonts\RobotoMono-Regular.ttf" />
+    <Content Include="fonts\RobotoMono-Thin.ttf" />
+    <Content Include="fonts\RobotoMono-ThinItalic.ttf" />
+    <Content Include="fonts\Roboto_Mono.zip" />
+    <None Include="Properties\PublishProfiles\ConsumerPortalNetService.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12736</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12736/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
